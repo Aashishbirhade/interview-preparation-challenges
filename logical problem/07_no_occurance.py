@@ -8,4 +8,3 @@ def occurance(a,t):
 arr = [1,2,3,2,2,2]
 t = 2
 print(occurance(arr,t))
-
