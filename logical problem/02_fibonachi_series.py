@@ -12,4 +12,4 @@ def fibonacci_series(n):
         fib.append(next_fib)
     return fib
 
-print(fibonacci_series(2))
+print(fibonacci_series(10))

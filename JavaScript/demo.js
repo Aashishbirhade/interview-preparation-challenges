@@ -19,6 +19,7 @@ a = [
   },
 ];
 console.log(a);
-a.map(v =>{
+a.map((v,i) =>{
+    console.log(i)
     console.log(v.name ,v.age , v.roll)
 })

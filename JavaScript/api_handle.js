@@ -17,7 +17,7 @@ info()
 async function info(count) {
     const response = await fetch(`https://randomuser.me/api/?results=${count}`);
     const data = await response.json();
-    
+    //user : for contain and index for no
     data.results.forEach((user, index) => {
         const { title, first, last } = user.name;
         console.log(`Person ${index + 1}:`);
