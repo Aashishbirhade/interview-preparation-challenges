@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+      
+        .container{
+            background-color: rgb(220, 223, 225);
+            border-radius: 30px;
+            box-shadow: 10px;
+            width:30%;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        input{
+            padding: 8px;
+            border-radius: 10px;
+        }
+        button{
+            background-color: rgb(58, 202, 58);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><h1 id = "otp">Generate opt : </h1>
+        <input type="number" id="enter" placeholder="enter opt">
+        <button onclick="checker()">Submit</button>
+        <p id="msg"></p>
+    </div>
+    
+</body>
+<script>
+    const a = Math.floor(1000+Math.random()*9000)
+    document.getElementById('otp').innerHTML = ` Generated otp :${a}`
+    function checker(){
+        const enter = document.getElementById('enter').value
+        const msg = document.getElementById('msg')
+        if (enter == a){
+            msg.textContent = "varify successfully"
+        }
+        else{
+            msg.textContent = "error"
+        }
+    }
+</script>
+
+</html>
