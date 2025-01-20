@@ -10,4 +10,4 @@ if r > n:
 else:
     u = combination(n)
     l = combination(r)*(combination(n-r))
-    print(u//l)
+    print(f"{n}C{r} =",u//l)
