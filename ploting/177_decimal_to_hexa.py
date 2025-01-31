@@ -9,6 +9,6 @@ else:
             g = chr(55+rem)
         else:
             g = str(rem)
-        s = g +s
+        s = g + s
         n //= 16
 print(s)
