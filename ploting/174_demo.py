@@ -1,10 +1,10 @@
 a = 15
 for i in range(1,a+1):
     if i%3 == 0 and i%5 == 0:
-        print("FIZZABUZZ")
+        print("FIZZABUZZ",end=" , ")
     elif i%3== 0:
-        print("FIZZA")
+        print("FIZZA",end=" , ")
     elif i%5 == 0:
-        print("BUZZU")
+        print("BUZZU",end=" , ")
     else:
-        print(i)
+        print(i,end=" , ")
