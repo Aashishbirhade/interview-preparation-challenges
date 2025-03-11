@@ -14,7 +14,7 @@
 # print(c[::-1])
 
 
-n = 'aabc'
+n = 'aaaabbcb'
 a = ''
 c = 1
 for i in range(len(n)-1):
