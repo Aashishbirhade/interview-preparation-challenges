@@ -5,10 +5,10 @@ def isprime(a):
             f = 1
             return f
     return f
-a = 10
-su = 0
+a = 100
+su = []
 for i in range(2,a):
     v = isprime(i)
     if v == 0:
-        su += i
+        su.append(i)
 print(su)
