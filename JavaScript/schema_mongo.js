@@ -4,6 +4,6 @@ const user = mongo.Userschema({
     name: String,
     age: Number,
     email: String,
-    password: String
+   
 }) 
 module.exports = mongo.model('user', user)
