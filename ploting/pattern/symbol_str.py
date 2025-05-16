@@ -10,4 +10,4 @@ for i in (s):
             star += 1
         else:
             hash += 1
-print("heigher count is",star-hash)
+print("heigher count is: ",star-hash)
