@@ -6,7 +6,7 @@
         "age": 29,
         "department": "Software Development",
         "position": "Senior Developer",
-        "salary": 85000,
+        "salary": 8500,
         "email": "amit.sharma@example.com",
         "phone": "+91 9876543210"
       },
