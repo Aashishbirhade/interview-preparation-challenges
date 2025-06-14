@@ -1,5 +1,4 @@
 const API_KEY = "";
-
 const payload = {
   image_url: "https://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg", 
   enable_pbr: true,
