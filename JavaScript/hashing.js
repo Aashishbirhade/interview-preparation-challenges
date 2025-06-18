@@ -10,9 +10,9 @@ app.get("/", (req, res) => {
 app.get("/create", async (req, res) => {
   const { username,email, password } = req.body;
   const salt = 10;
-  const hash = bcrypt.hash("password", salt);
+  const hash = await bcrypt.hash(password, salt);
   console.log(hash);
-  const user = userModel.create({
+  const user = await userModel.create({
     username,
     email,
     password: hash,
