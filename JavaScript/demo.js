@@ -2,7 +2,7 @@ a = [
   {
     id: 1,
     name: "Aashish",
-    age: 40,
+    age: 42,
     roll: 10,
   },
   {
