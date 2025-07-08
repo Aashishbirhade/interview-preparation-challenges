@@ -34,7 +34,7 @@ const InvertedBorderCard = () => {
     <div className="w-[1.25rem] h-[1.25rem] absolute left-[45%] bottom-[0.5rem] border-br-[0.5rem] shadow-[0.375rem_0.375rem_0_0_#4a4e69]"></div>
     <div className="w-[1.25rem] h-[1.25rem] absolute left-[47%] bottom-0 border-br-[0.8rem] shadow-[0.375rem_0.375rem_0_0_#22223b]"></div>
   </div>
-</div>;
+</div>
   );
 };
 
