@@ -3,5 +3,5 @@ var v = a.map((i)=>i*10)
 console.log(v)
 
 a.forEach((i)=>{
-    console.log(i*3)
+    console.log(i*3);
 })
