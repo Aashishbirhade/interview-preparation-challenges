@@ -5,8 +5,8 @@ for i in range(n):
         print(c,end=" ")
     c += 1
     print()
-
-for i in range(n-1,0,-1):
+print(c)
+for i in range(n,0,-1):
     for j in range(i):
         print(c,end=" ")
     c -= 1

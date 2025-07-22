@@ -1,3 +1,3 @@
-for k in range(i):
-        print("*",end=" ")
-   
+a =5
+n = a*(a+2)//2
+print(n)
