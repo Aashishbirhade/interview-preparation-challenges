@@ -10,5 +10,6 @@ encoded_msg = urllib.parse.quote(message)
 # WhatsApp URL
 url = f"https://wa.me/{phone_number}?text={encoded_msg}"
 
+
 # Open the URL in browser (this opens WhatsApp app on phone)
 webbrowser.open(url)
