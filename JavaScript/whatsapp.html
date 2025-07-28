@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Message Sender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <h1>WhatsApp Message Sender</h1>
+    <p>Click the button below to send a message via WhatsApp:</p>
+    
+    <button onclick="sendWhatsAppMessage()">
+        Send WhatsApp Message
+    </button>
+
+    <script>
+        function sendWhatsAppMessage() {
+            const phoneNumber = '919765229719';
+            const message = "Aashish hi kya karun rahila ne be bhau";
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+        
+     
+    </script>
+</body>
+</html>
