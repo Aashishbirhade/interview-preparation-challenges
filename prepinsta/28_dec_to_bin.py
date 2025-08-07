@@ -5,6 +5,6 @@ while a!=0:
         s = '0'+ s
     else:
         s= '1' +s
-        
+      
     a //= 2
 print(s)
