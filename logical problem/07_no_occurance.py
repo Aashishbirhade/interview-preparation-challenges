@@ -1,4 +1,5 @@
 def occurance(a,t):
+    
     c = 0
     for i in a:
         if i == t:
