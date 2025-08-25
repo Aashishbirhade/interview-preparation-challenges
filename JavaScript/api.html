@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="data-list"></div>
+
+    <script>
+      async function api() {
+        const a = await fetch("https://jsonplaceholder.typicode.com/users");
+        const b = await a.json();
+        console.log(b);
+        let contain = document.getElementById("data-list");
+        contain.innerHTML = "";
+        b.forEach((e) => {
+          let c = document.createElement("div");
+          c.innerHTML = `
+                <h2> ${e.name} </h2>
+                `;
+          contain.append(c);
+        });
+      }
+      api()
+    </script>
+  </body>
+</html>
