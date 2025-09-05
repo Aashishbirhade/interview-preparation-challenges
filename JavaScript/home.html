@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      background-color: blueviolet;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    /* Logo */
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    /* Menu */
+    .menu ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    .menu li {
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Auth buttons */
+    .auth button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .login {
+      background: white;
+      color: blueviolet;
+    }
+    .signup {
+      background: orange;
+      color: white;
+    }
+
+    /* Hamburger button (hidden by default) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+    }
+
+    /* ------------ Responsive (Mobile < 768px) ------------ */
+    @media (max-width: 768px) {
+      .menu {
+        display: none; /* hide menu */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: blueviolet;
+      }
+      .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .hamburger {
+        display: flex; /* show hamburger */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <!-- Left: Logo -->
+    <div class="logo">
+      <img src="https://via.placeholder.com/100x40" alt="Logo">
+    </div>
+
+    <!-- Center: Menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Port</li>
+      </ul>
+    </div>
+
+    <!-- Right: Buttons + Hamburger -->
+    <div class="auth">
+      <button class="login">Login</button>
+      <button class="signup">Sign Up</button>
+    </div>
+
+    <!-- Hamburger button -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
