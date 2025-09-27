@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife Conservation | Protect Our Planet's Biodiversity</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+      
+      .feature-card {
+        transition: transform 0.3s;
+        height: 100%;
+      }
+      
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+      
+      .feature-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      .impact-section {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+      }
+      
+      .stat-number {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #0d6efd;
+      }
+      
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-paw me-2"></i>Wildlife Conservation
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#species">Species</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conservation">Conservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get-involved">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Protecting Our Planet's Wildlife</h1>
+        <p class="lead mb-4">Join us in our mission to conserve endangered species and preserve biodiversity for future generations.</p>
+        <a href="#get-involved" class="btn btn-success btn-lg me-2">Get Involved</a>
+        <a href="#donate" class="btn btn-outline-light btn-lg">Donate Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side: Image -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 class="img-fluid rounded shadow" alt="Wildlife Conservation">
+          </div>
+          
+          <!-- Right Side: Content -->
+          <div class="col-md-6">
+            <h2 class="mb-3">Our Mission</h2>
+            <p class="mb-4">
+              Wildlife Conservation is dedicated to protecting endangered species and their habitats through scientific research, 
+              community engagement, and sustainable conservation practices. For over 20 years, we've worked tirelessly to ensure 
+              that future generations can experience the rich biodiversity of our planet.
+            </p>
+            <p class="mb-4">
+              Our team of conservationists, researchers, and volunteers work across five continents to address the most pressing 
+              threats to wildlife, including habitat loss, poaching, and climate change.
+            </p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Species Section -->
+    <section id="species" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1>Featured <span class="text-primary">Species</span></h1>
+          <p class="lead">Meet some of the incredible animals we're working to protect</p>
+        </div>
+        
+        <div class="row justify-content-center g-4">
+          <!-- Tiger Card -->
+          <div class="col-md-4">
+            <div class="card feature-card h-100">
+              <img class="card-img-top" 
+                   src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                   alt="Bengal Tiger" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Bengal Tiger</h4>
+                <p class="card-text flex-grow-1">
+                  The Bengal tiger, native to the Indian subcontinent, is one of the most iconic big cats. 
+                  With only around 2,500 left in the wild, they are classified as endangered due to habitat loss and poaching.
+                </p>
+                <div class="d-grid gap-2 mt-auto">
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Elephant Card -->
+          <div class="col-md-4">
+            <div class="card feature-card h-100">
+              <img class="card-img-top" 
+                   src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                   alt="African Elephant" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">African Elephant</h4>
+                <p class="card-text flex-grow-1">
+                  African elephants are the largest land animals on Earth. They play a crucial role in their ecosystem 
+                  but face severe threats from ivory poaching and habitat fragmentation.
+                </p>
+                <div class="d-grid gap-2 mt-auto">
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Panda Card -->
+          <div class="col-md-4">
+            <div class="card feature-card h-100">
+              <img class="card-img-top" 
+                   src="https://img.freepik.com/free-photo/photorealistic-view-wild-bear-its-natural-environment_23-2151427250.jpg?semt=ais_hybrid&w=740&q=80" 
+                   alt="Giant Panda" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Giant Panda</h4>
+                <p class="card-text flex-grow-1">
+                  The giant panda, China's national treasure, has seen its population rebound thanks to conservation efforts. 
+                  However, they remain vulnerable due to their specialized diet and limited habitat.
+                </p>
+                <div class="d-grid gap-2 mt-auto">
+                  <button type="button" class="btn btn-primary">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conservation Impact Section -->
+    <section id="conservation" class="impact-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1>Our <span class="text-primary">Impact</span></h1>
+          <p class="lead">See how your support makes a difference</p>
+        </div>
+        
+        <div class="row text-center">
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">250+</div>
+            <p>Species Protected</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">1.2M</div>
+            <p>Acres of Habitat Preserved</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">15K</div>
+            <p>Community Members Engaged</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">45</div>
+            <p>Countries of Operation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 class="img-fluid rounded shadow" alt="Volunteer Work">
+          </div>
+          
+          <div class="col-md-6 order-md-1">
+            <h2 class="mb-3">Get Involved</h2>
+            <p class="mb-4">
+              You can make a difference in wildlife conservation. Whether through volunteering, donations, or spreading awareness, 
+              every action counts in our fight to protect biodiversity.
+            </p>
+            <ul class="mb-4">
+              <li>Volunteer for field conservation projects</li>
+              <li>Adopt an animal symbolically</li>
+              <li>Participate in citizen science programs</li>
+              <li>Support sustainable products</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary me-2">Volunteer</a>
+            <a href="#donate" class="btn btn-success">Donate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Wildlife Conservation</h5>
+            <p>Protecting biodiversity for a sustainable future.</p>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#about" class="text-white">About Us</a></li>
+              <li><a href="#species" class="text-white">Our Work</a></li>
+              <li><a href="#get-involved" class="text-white">Get Involved</a></li>
+              <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Newsletter</h5>
+            <p>Subscribe to our newsletter for updates on our conservation efforts.</p>
+            <form>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="mt-4 mb-3">
+        <div class="text-center">
+          <p>&copy; 2023 Wildlife Conservation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
